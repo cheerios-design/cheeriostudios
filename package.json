@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.3",
+    "tailwindscss": "^0.3.0"
+  }
+}
