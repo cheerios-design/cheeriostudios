@@ -1,0 +1,21 @@
+{
+  "name": "Cheerio Studio",
+  "short_name": "Cheerio",
+  "description": "Empowering businesses through web and graphic design solutions.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fefefe",
+  "theme_color": "#1c1e53",
+  "icons": [
+    {
+      "src": "assets/mainlogo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/mainlogo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
