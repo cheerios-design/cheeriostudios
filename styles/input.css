@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
+@plugin "tailwindcss-motion";
 @source "../node_modules/flowbite";
 
 :root {
@@ -27,4 +28,24 @@
 a:hover svg {
     color: #f59e0b;
     /* amber-400 */
+}
+
+@layer utilities {
+    @keyframes morph {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .animate-morph {
+        animation: morph 2.1s infinite ease-in-out;
+    }
 }
