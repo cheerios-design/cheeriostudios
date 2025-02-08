@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" smooth-scroll>
 
 <head>
     <meta charset="UTF-8">
@@ -26,8 +26,7 @@
 <body>
 
 
-    <nav
-        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://cheeriostudios.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="assets/svg/black-trans.svg" class="h-8" alt="cheeriostudios Logo">
@@ -77,7 +76,7 @@
         </div>
     </nav>
     <main class="container mx-auto mt-20">
-        <section class="bg-white h-screen dark:bg-gray-900">
+        <section class="bg-white max-h-fit dark:bg-gray-900">
             <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div class="mr-auto place-self-center lg:col-span-7">
                     <h1
@@ -110,18 +109,240 @@
                     </a>
                 </div>
                 <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                    <svg viewBox="0 0 100 100" class="w-full h-full">
-                        <circle cx="25" cy="25" r="25" fill="#fbbf24" class="svg-shape"></circle>
+                    <svg viewBox="0 0 50 70" class="liquid-svg">
+                        <circle cx="25" cy="25" r="25" fill="#fbbf24" class="liquid-circle"></circle>
+                        <circle cx="75" cy="75" r="25" fill="#f97316" class="liquid-circle"></circle>
+                        <circle cx="50" cy="50" r="25" fill="#ffffff" class="liquid-circle"></circle>
                     </svg>
                 </div>
-
-
             </div>
+        </section>
+        <section id="projects" class="bg-white max-h-fit dark:bg-gray-900">
+            <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2
+                        class="text-3xl font-accent uppercase font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+                        Our Recent Projects
+                    </h2>
+                    <p class="mt-4 text-base font-paragraph font-normal text-gray-500 sm:text-xl dark:text-gray-400">
+                        Cheerio Studio has worked with a variety of clients to create custom websites, marketing assets,
+                        and branding solutions. Here are some of our recent projects.
+                    </p>
+                </div>
+
+                <div class="mt-12 space-y-16 sm:mt-16">
+                    <div class="flex flex-col lg:items-center lg:flex-row gap-y-8 sm:gap-y-12 lg:gap-x-16 xl:gap-x-24">
+                        <div>
+                            <img class="object-cover w-full rounded-lg shadow-lg"
+                                src="assets/projects/archovia/archovia.port.thmbnl.png" alt="archovia logo">
+
+                        </div>
+
+                        <div class="w-full space-y-6 lg:max-w-lg shrink-0 xl:max-w-2xl">
+                            <div class="space-y-3">
+                                <h3
+                                    class="text-3xl font-accent uppercase font-bold leading-tight text-gray-900 sm:text-4xl dark:text-white">
+                                    Project archovia <span class="normal-case text-amber-400 text-sm"> (Ungoing
+                                        Project) </span>
+                                </h3>
+                                <a href="https://www.archovia.com/" title="archovia"
+                                    class="inline-flex items-center text-lg font-medium text-amber-400 hover:underline">
+                                    https://www.archovia.com/
+                                    <svg aria-hidden="true" class="w-5 h-5 ml-2.5" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                                        <path
+                                            d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                                    </svg>
+                                </a>
+                                <p
+                                    class="text-base font-paragraph font-normal text-gray-500 sm:text-lg dark:text-gray-400">
+                                    Archovia is an architecture and interior design company with over 20 years of
+                                    experience. The company specializes in innovative, sustainable, and timeless designs
+                                    for residential and commercial spaces.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2.5">
+                                <div class="p-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+                                    <img data-tooltip-target="tooltip-logo-html5" class="object-contain w-auto h-8"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/technologies/html5.svg"
+                                        alt="">
+                                </div>
+                                <div id="tooltip-logo-html5" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    HTML5
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+
+                                <div class="p-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+                                    <img data-tooltip-target="tooltip-logo-css3" class="object-contain w-auto h-8"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/technologies/css-3.svg"
+                                        alt="">
+                                </div>
+                                <div id="tooltip-logo-css3" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    CSS3
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+
+                                <div class="p-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+                                    <img data-tooltip-target="tooltip-logo-javascript" class="object-contain w-auto h-8"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/technologies/javascript.svg"
+                                        alt="">
+                                </div>
+                                <div id="tooltip-logo-javascript" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    JavaScript
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+
+                                <div class="p-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+                                    <img data-tooltip-target="tooltip-logo-tailwind-css"
+                                        class="object-contain w-auto h-8"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/technologies/tailwind-css.svg"
+                                        alt="">
+                                </div>
+                                <div id="tooltip-logo-tailwind-css" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    Tailwind CSS
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+
+                                <div class="p-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+                                    <img data-tooltip-target="tooltip-logo-adobe-cc" class="object-contain w-auto h-8"
+                                        src="assets/svg/adobe-cc.svg" alt="">
+                                </div>
+                                <div id="tooltip-logo-adobe-cc" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    Adobe Creative Cloud
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                            </div>
+
+                            <a href="#" title=""
+                                class="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                                role="button">
+                                View case study
+                                <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:items-center lg:flex-row gap-y-8 sm:gap-y-12 lg:gap-x-16 xl:gap-x-24">
+                        <div class="lg:order-2">
+                            <img class="object-cover w-full rounded-lg shadow-lg"
+                                src="assets/projects/envanter/envanter.port.thmbnl.png" alt="envanter">
+                        </div>
+
+                        <div class="w-full space-y-6 lg:max-w-lg shrink-0 xl:max-w-2xl lg:order-1">
+                            <div class="space-y-3">
+                                <h3
+                                    class="text-3xl font-bold font-accent uppercase leading-tight text-gray-900 sm:text-4xl dark:text-white">
+                                    Envanter<span class="normal-case text-amber-400 text-sm"> (Ungoing
+                                        Project) </span>
+                                </h3>
+                                <a href="https://en-vanter.com" title=""
+                                    class="inline-flex items-center text-lg font-medium text-amber-400 hover:underline">
+                                    https://en-vanter.com
+                                    <svg aria-hidden="true" class="w-5 h-5 ml-2.5" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                                        <path
+                                            d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                                    </svg>
+                                </a>
+                                <p
+                                    class="text-base font-paragraph font-normal text-gray-500 sm:text-lg dark:text-gray-400">
+                                    Envanter is a B2B and B2C platform designed to connect suppliers and consumers
+                                    efficiently. It aims to streamline inventory management, contract handling, and
+                                    supplier-consumer interactions by offering a transparent, high-quality, and reliable
+                                    digital ecosystem.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2.5">
+                                <div class="p-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+                                    <img data-tooltip-target="tooltip-logo-html5" class="object-contain w-auto h-8"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/technologies/html5.svg"
+                                        alt="">
+                                </div>
+                                <div id="tooltip-logo-html5" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    HTML5
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+
+                                <div class="p-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+                                    <img data-tooltip-target="tooltip-logo-css3" class="object-contain w-auto h-8"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/technologies/css-3.svg"
+                                        alt="">
+                                </div>
+                                <div id="tooltip-logo-css3" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    CSS3
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+
+                                <div class="p-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+                                    <img data-tooltip-target="tooltip-logo-javascript" class="object-contain w-auto h-8"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/technologies/javascript.svg"
+                                        alt="">
+                                </div>
+                                <div id="tooltip-logo-javascript" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    JavaScript
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+
+                                <div class="p-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+                                    <img data-tooltip-target="tooltip-logo-tailwind-css"
+                                        class="object-contain w-auto h-8"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/technologies/tailwind-css.svg"
+                                        alt="">
+                                </div>
+                                <div id="tooltip-logo-tailwind-css" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    Tailwind CSS
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+
+                                <div class="p-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+                                    <img data-tooltip-target="tooltip-logo-adobe-cc" class="object-contain w-auto h-8"
+                                        src="assets/svg/adobe-cc.svg" alt="">
+                                </div>
+                                <div id="tooltip-logo-adobe-cc" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    Adobe Creative Cloud
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                            </div>
+
+                            <a href="#" title=""
+                                class="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                                role="button">
+                                View case study
+                                <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
         </section>
     </main>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/morph.js" defer></script>
+    <!-- <script src="scripts/morph.js" defer></script> -->
 </body>
 
 </html>
