@@ -1,5 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+:root {
+    --font-heading: "Poiret One", sans-serif;
+    --font-paragraph: "Maven Pro", sans;
+    --font-accent: "Sulphur Point", monospace;
+}
+
+.font-heading {
+    font-family: var(--font-heading);
+    font-weight: 800;
+}
+
+.font-paragraph {
+    font-family: var(--font-paragraph);
+    font-weight: 500;
+}
+
+.font-accent {
+    font-family: var(--font-accent);
+    font-weight: 600;
+}
+
+a:hover svg {
+    color: #f59e0b;
+    /* amber-400 */
+}
