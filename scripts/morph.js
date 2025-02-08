@@ -1,17 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   const svgElement = document.querySelector("svg");
+  const shapeElement = svgElement.querySelector("circle"); // Start with circle
 
   const shapes = [
-    '<circle cx="25" cy="25" r="25" fill="#fbbf24"></circle>',
-    '<rect x="10" y="10" width="30" height="30" fill="#fbbf24"></rect>',
-    '<polygon points="25,5 45,45 5,45" fill="#fbbf24"></polygon>',
+    { type: "circle", attributes: { cx: "25", cy: "25", r: "25" } },
+    {
+      type: "rect",
+      attributes: { x: "10", y: "10", width: "30", height: "30" },
+    },
+    { type: "polygon", attributes: { points: "25,5 45,45 5,45" } },
   ];
 
   let currentShapeIndex = 0;
-  const morphingInterval = 2100; // Interval for morphing in milliseconds
+  const morphingInterval = 2100; // Morph every 2.1s
 
   function morphShape() {
-    // Apply bounce effect
     svgElement.classList.add(
       "scale-110",
       "transition-transform",
@@ -20,17 +23,31 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     setTimeout(() => {
-      // Remove existing shape
-      svgElement.innerHTML = shapes[currentShapeIndex];
+      // Get next shape attributes
+      const nextShape = shapes[currentShapeIndex];
 
-      // Reset bounce effect after change
-      svgElement.classList.remove("scale-110");
+      // Change the existing shape dynamically instead of replacing it
+      shapeElement.setAttribute("fill", "#fbbf24"); // Ensure color remains the same
 
-      // Cycle through shapes
+      // Apply attributes for different shapes
+      if (nextShape.type === "circle") {
+        shapeElement.setAttribute("cx", nextShape.attributes.cx);
+        shapeElement.setAttribute("cy", nextShape.attributes.cy);
+        shapeElement.setAttribute("r", nextShape.attributes.r);
+        shapeElement.setAttribute("d", ""); // Reset 'd' if previous shape was a path
+      } else if (nextShape.type === "rect") {
+        shapeElement.setAttribute("x", nextShape.attributes.x);
+        shapeElement.setAttribute("y", nextShape.attributes.y);
+        shapeElement.setAttribute("width", nextShape.attributes.width);
+        shapeElement.setAttribute("height", nextShape.attributes.height);
+      } else if (nextShape.type === "polygon") {
+        shapeElement.setAttribute("points", nextShape.attributes.points);
+      }
+
+      svgElement.classList.remove("scale-110"); // Reset bounce effect
       currentShapeIndex = (currentShapeIndex + 1) % shapes.length;
-    }, 300); // Transition duration
+    }, 300);
   }
 
-  // Start morphing loop
   setInterval(morphShape, morphingInterval);
 });

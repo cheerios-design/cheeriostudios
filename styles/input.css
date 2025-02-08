@@ -45,7 +45,9 @@ a:hover svg {
         }
     }
 
-    .animate-morph {
+    /* Apply animation to the shape inside the SVG */
+    .svg-shape {
         animation: morph 2.1s infinite ease-in-out;
+        transition: transform 0.3s ease-in-out;
     }
 }
