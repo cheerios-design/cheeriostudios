@@ -37,22 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   startAnimation();
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+  // Navbar toggle functionality
   const navbarToggle = document.getElementById("navbar-toggle");
-
-  const navbarSticky = document.getElementById("navbar-sticky");
+  const navbarMenu = document.getElementById("navbar-sticky");
 
   navbarToggle.addEventListener("click", function () {
-    navbarSticky.classList.toggle("hidden");
+    navbarMenu.classList.toggle("hidden");
+    navbarMenu.classList.toggle("flex");
   });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  function enableDarkMode() {
-    document.body.classList.add("dark-mode");
-  }
-
-  enableDarkMode();
 });
