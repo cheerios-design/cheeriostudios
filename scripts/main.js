@@ -46,4 +46,14 @@ document.addEventListener("DOMContentLoaded", function () {
     navbarMenu.classList.toggle("hidden");
     navbarMenu.classList.toggle("flex");
   });
+
+  document.documentElement.classList.add("dark");
+
+  // Ensure dark mode is applied for both big and small screens
+  const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  if (mediaQuery.matches) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
 });
