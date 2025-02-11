@@ -56,4 +56,21 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     document.documentElement.classList.remove("dark");
   }
+
+  // Floating effect on hover
+  const hoverDivs = document.querySelectorAll(
+    "#branding-design, #web-design-development, #social-media-management"
+  );
+
+  hoverDivs.forEach((div) => {
+    div.addEventListener("mouseenter", function () {
+      const img = div.querySelector("img");
+      img.classList.add("float");
+    });
+
+    div.addEventListener("mouseleave", function () {
+      const img = div.querySelector("img");
+      img.classList.remove("float");
+    });
+  });
 });

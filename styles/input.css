@@ -75,3 +75,23 @@ a:hover svg {
         transform: translate(0, 0);
     }
 }
+
+/* Floating effect keyframes */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Add the floating effect class */
+.float {
+    animation: float 2s ease-in-out infinite;
+}
