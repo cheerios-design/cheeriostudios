@@ -95,3 +95,10 @@ a:hover svg {
 .float {
     animation: float 2s ease-in-out infinite;
 }
+
+/* Active step styling */
+.step.active {
+    border-color: #4caf50;
+    background-color: #e8f5e9;
+    color: #4caf50;
+}
