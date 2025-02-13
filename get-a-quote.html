@@ -78,8 +78,8 @@
         </div>
     </nav>
     <main class="container mx-auto mt-20 px-4 dark:bg-gray-900 flex items-center justify-center min-h-screen">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-            <div class="pt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-1/2">
+            <div class="pt-10 flex flex-col items-center justify-center space-y-6">
                 <h1 class="text-3xl uppercase font-accent dark:text-white font-bold mb-6">Get a Quote</h1>
                 <ol class="space-y-4 w-72" id="stepper">
                     <li id="step-1" class="step active">
@@ -130,9 +130,10 @@
                 </ol>
             </div>
 
-            <div id="form-container" class="pt-10">
+            <div id="form-container"
+                class="pt-10 flex flex-row justify-center items-center bg-slate-800 backdrop-blur-2xl rounded-lg">
                 <!-- Step 1: User Info Form -->
-                <form id="form-step-1" class="space-y-4">
+                <form id="form-step-1" class="space-y-5 w-3/4">
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                             email</label>
@@ -148,7 +149,7 @@
                             required />
                     </div>
                     <button type="button"
-                        class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="w-1/2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         onclick="nextStep()">Next step</button>
                 </form>
 
